@@ -1,10 +1,7 @@
 import os
-try:
-	from aiogram import Bot, Dispatcher, executor, types
-	from aiogram.dispatcher import FSMContext, filters
-	from aiogram.types import Message, CallbackQuery, ChatType
-except:
-	os.system("pip install aiogram")
+from aiogram import Bot, Dispatcher, executor, types
+from aiogram.dispatcher import FSMContext, filters
+from aiogram.types import Message, CallbackQuery, ChatType
 
 TOKEN_Telegram = "5979393392:AAF_1lINfvaAO7GiVvMe8AjyU-xJ3uRh_IU"
 client = Bot(TOKEN_Telegram, parse_mode="HTML")
